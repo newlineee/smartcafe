@@ -10,10 +10,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="../css/style.css">
-  <title></title>
+  <title>Smart Cafe | Tıkla gelsin.</title>
 </head>
 <body>
-  <h1>Kasa Ekranı</h1>
+  <h1>Sipariş Geçmişi</h1>
   <hr>
   <?php
 
@@ -21,7 +21,7 @@
 
   $t=0;
 
-  $sql="SELECT * FROM `order` WHERE `orderstatus`=2 ORDER BY `orderdate`";
+  $sql="SELECT * FROM `order` WHERE `orderstatus`=0 ORDER BY `orderdate`";
   $result=$DBcon->query($sql);
 
   while($row=$result->fetch_array()){
@@ -73,7 +73,6 @@
       <br>
       <h6><?php echo "Toplam fiyat=".$t; ?></h6>
       <?php $t=0; ?>
-      <a id="update" href="shop.php?action=update2&orderid=<?php echo $row["orderid"]; ?>"><span>Tamamlandı</span></a>
     </div>
   </body>
   </html>

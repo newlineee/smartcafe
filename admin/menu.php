@@ -35,9 +35,9 @@
     <div class="dropdown">
       <a class="dropdown__hover" href="#">Ekranlar</a>
       <div class="dropdown__menu">
-        <a href="kitchen_display.php">Kitchen Display</a>
-        <a href="kitchen_screen.php">Kitchen Screen</a>
-        <a href="safe_screen.php">Safe Screen</a>
+        <a href="history_screen.php">Sipariş Geçmişi</a>
+        <a href="kitchen_screen.php">Mutfak Ekranı</a>
+        <a href="safe_screen.php">Kasa Ekranı</a>
       </div>
     </div>
   </li>
