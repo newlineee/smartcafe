@@ -54,7 +54,7 @@ $result2=$DBcon->query($query2);
 
 <?php
 
-    $query3 ="SELECT * FROM category WHERE categoryid='".$turunuz."'";
+    @$query3 ="SELECT * FROM category WHERE categoryid='".$turunuz."'";
     $result3=$DBcon->query($query3);
     while ($row3 = $result3->fetch_array()){
 
